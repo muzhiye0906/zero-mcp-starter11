@@ -1,0 +1,9 @@
+name = "zero-mcp-starter11"
+main = "index.js"
+compatibility_date = "2026-08-12"
+
+[vars]
+ALLOWED_ORIGINS = "https://freverzeroloveowo.top,https://localhost"
+
+[secrets]
+required = ["JINA_API_KEY", "WEATHERAPI_KEY"]

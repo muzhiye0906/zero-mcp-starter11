@@ -1,0 +1,24 @@
+{
+  "name": "zero-mcp-starter11",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Zero personal Search and Weather MCP Worker",
+  "scripts": {
+    "deploy": "wrangler deploy --config wrangler.toml",
+    "check": "wrangler deploy --dry-run --config wrangler.toml --outdir .wrangler-dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "cloudflare": {
+    "bindings": {
+      "JINA_API_KEY": {
+        "description": "填写你的 Jina API Key，用于上网搜索和读取公开网页。"
+      },
+      "WEATHERAPI_KEY": {
+        "description": "填写你的 WeatherAPI Key，用于查询实时天气和天气预报。"
+      }
+    }
+  }
+}
